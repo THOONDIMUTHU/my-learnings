@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my learnings</title>
+    <!-- fav icon -->
+     <link rel="icon" type="image/x-icon" href="./images/icon.jpg">
+</head>
+<body>
+    <h1>images</h1>
+    <img src="./images/image.jpg" alt="this is vinayakar image" height="300px" width="300px" />
+
+    <h1>animated image</h1>
+    <img src="https://www.adorama.com/alc/wp-content/uploads/2021/05/bird-wings-flying-feature.gif" alt="bird fly"height="300px" width="300px" />
+
+    <h1>image as a link</h1>
+    <a href="https://www.adorama.com/alc/wp-content/uploads/2021/05/bird-wings-flying-feature.gif" target="_blank">
+        <img src="./images/image.jpg" alt="this is vinayakar image" height="300px" width="300px" />
+    </a>
+     <h1>image floating</h1>
+     <img src="./images/image.jpg" alt="this is vinayakar image" style="float: right;height: 300px;width: 300px;" /><br>
+     <!-- <img src="./images/image.jpg" alt="this is vinayakar image" style="float: left;height: 300px;width: 300px;" /><br> -->
+    
+    <h1>image map</h1>
+    <img src="./images/lapimage.jpg" alt="laptop image" usemap="#workmap"/>
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" href="https://images.pexels.com/photos/7974/pexels-photo.jpg" alt="laptop" target="_blank">
+        <area shape="rect" coords="290,172,333,250" href="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="mobile" target="_blank">
+        <area shape="circle" coords="337,300,44" href="https://images.pexels.com/photos/851555/pexels-photo-851555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="coffee cup" target="_blank">
+    </map>
+
+
+    <h1>html picture element</h1>
+    <picture>
+        <source media="(min-width:650px)" srcset="./images/lapimage.jpg"/>
+        <source media="(min-width:450px)" srcset="./images/image.jpg"/>
+        <img src="./images/image.jpg" alt="" style="width: auto;">
+    </picture>
+
+
+</body>
+</html>
